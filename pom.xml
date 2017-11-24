@@ -38,10 +38,26 @@
 					<descriptorRefs>
 						<descriptorRef>jar-with-dependencies</descriptorRef>
 					</descriptorRefs>
-					<minimizeJar>true</minimizeJar>
-				
 				</configuration>
 			</plugin>
+<plugin>
+        <artifactId>maven-assembly-plugin</artifactId>
+        <version>3.1.0</version>
+        <configuration>
+          <descriptorRefs>
+            <descriptorRef>jar-with-dependencies</descriptorRef>
+          </descriptorRefs>
+        </configuration>
+                         <executions>
+                                        <execution>
+                                                <id>make-assembly</id>
+                                                <phase>package</phase>
+                                                <goals>
+                                                        <goal>single</goal>
+                                                </goals>
+                                        </execution>
+                                </executions>
+</plugin>
 		</plugins>
 	</build>
 	<url>https://github.com/inode-/AttackSelector</url>

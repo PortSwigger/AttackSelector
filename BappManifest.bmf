@@ -1,0 +1,12 @@
+Uuid: a019ad8b3cea46ac9032d279440f5372
+ExtensionType: 1
+Name: Attack Selector
+RepoName: attack-selector
+ScreenVersion: 0.1
+SerialVersion: 1
+MinPlatformVersion: 0
+ProOnly: True
+Author: Maurizio Agazzini
+ShortDescription: Allows you to create multiple scan profiles and select the one to use from the context menu.
+EntryPoint: target/AttackSelector-0.1-jar-with-dependencies.jar
+BuildCommand: mvn package -DskipTests=true -Dmaven.javadoc.skip=true -B
